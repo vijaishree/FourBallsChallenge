@@ -21,12 +21,16 @@ public class NewEllipse {
         this.speed = speed*ballNo;
     }
 
+    public void setSize(int size) {
+        this.size = size * ballNo;
+    }
+
     public int getSpeed() {
         return speed;
     }
 
     public int getSize() {
-        return size*ballNo;
+        return size;
     }
 
     @Override
