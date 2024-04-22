@@ -5,6 +5,7 @@ public class FourBallsChallengeWithOOPS extends PApplet {
     public static final int WIDTH = 640;
     public static final int HEIGHT = 480;
     public int speed = 0;
+    public int size = 10;
     public static void main(String[] args){
         PApplet.main(FourBallsChallengeWithOOPS.class,args);
     }
@@ -21,8 +22,8 @@ public class FourBallsChallengeWithOOPS extends PApplet {
     NewEllipse newEllipse1 = getEllipseDimensions(1);
     ellipse(newEllipse1.getSpeed(), newEllipse1.getHeight(), newEllipse1.getSize(), newEllipse1.getSize());
 
-   NewEllipse newEllipse2 = getEllipseDimensions(2);
-   ellipse(newEllipse2.getSpeed(), newEllipse2.getHeight(), newEllipse2.getSize(), newEllipse2.getSize());
+    NewEllipse newEllipse2 = getEllipseDimensions(2);
+    ellipse(newEllipse2.getSpeed(), newEllipse2.getHeight(), newEllipse2.getSize(), newEllipse2.getSize());
 
 
     NewEllipse newEllipse3 = getEllipseDimensions(3);
@@ -31,6 +32,7 @@ public class FourBallsChallengeWithOOPS extends PApplet {
 
     NewEllipse newEllipse4 = getEllipseDimensions(4);
     ellipse(newEllipse4.getSpeed(), newEllipse4.getHeight(), newEllipse4.getSize(), newEllipse4.getSize());
+
     speed++;
     }
 
@@ -38,6 +40,7 @@ public class FourBallsChallengeWithOOPS extends PApplet {
         NewEllipse newEllipse = new NewEllipse(ballNo);
         newEllipse.setHeight(HEIGHT/5);
         newEllipse.setSpeed(speed);
+        newEllipse.setSize(size);
         System.out.println(newEllipse.toString());
         return newEllipse;
     }
