@@ -17,6 +17,7 @@ public class FourBallsChallengeWithoutOOPS extends  PApplet {
     @Override
     public void settings() {
         super.settings();
+        
         size(WIDTH, HEIGHT);
     }
 
@@ -24,12 +25,19 @@ public class FourBallsChallengeWithoutOOPS extends  PApplet {
     public void draw(){
 
         ellipse(x1,HEIGHT/5, DIAMETER, DIAMETER);
+        
         ellipse(x2,2 * HEIGHT/5, 2*DIAMETER, 2*DIAMETER);
+        
         ellipse(x3,3 * HEIGHT/5, 3*DIAMETER, 3*DIAMETER);
+        
         ellipse(x4,4 * HEIGHT/5, 4*DIAMETER, 4*DIAMETER);
+        
         x1++;
+        
         x2+=2;
+        
         x3+=3;
+        
         x4+=4;
     }
 
