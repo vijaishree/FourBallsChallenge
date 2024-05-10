@@ -1,22 +1,19 @@
 public class NewEllipse {
     private int height;
-    private int size = 10;
-    private int speed=0;
-    private int ballNo;
+    private int size;
+    private int speed;
+    //private int ballNo;
 
-    public NewEllipse(int ballNo){
-        this.ballNo = ballNo;
-    }
 
-    public void setHeight(int height) {
+    public void setYAxis(int height) {
         this.height = height;
     }
 
-    public int getHeight() {
+    public int getYAxis() {
         return height ;
     }
 
-    public void setSpeed(int speed) {
+    public void setXAxis(int speed) {
 
         this.speed = speed;
     }
@@ -25,7 +22,7 @@ public class NewEllipse {
         this.size = size;
     }
 
-    public int getSpeed() {
+    public int getXAxis() {
         return speed;
     }
 
@@ -39,7 +36,7 @@ public class NewEllipse {
                 "height=" + height +
                 ", size=" + size +
                 ", speed=" + speed +
-                ", ballNo=" + ballNo +
+
                 '}';
     }
 }

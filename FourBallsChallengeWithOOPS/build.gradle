@@ -14,7 +14,15 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
     implementation group: 'org.processing', name: 'core', version: '3.3.6'
 }
+jar {
+    manifest {
+        attributes "Main-Class": "com.gradle.tutorial.FizzBuzzProcessor"
+    }
 
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
 test {
     useJUnitPlatform()
 }

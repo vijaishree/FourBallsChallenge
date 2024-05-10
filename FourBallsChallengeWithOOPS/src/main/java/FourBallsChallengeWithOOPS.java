@@ -3,13 +3,9 @@ import processing.core.PApplet;
 public class FourBallsChallengeWithOOPS extends PApplet {
 
     public static final int WIDTH = 640;
-    
     public static final int HEIGHT = 480;
-    
     public int speed = 0;
-
     public int size = 10;
-    
     public static void main(String[] args){
         PApplet.main(FourBallsChallengeWithOOPS.class,args);
     }
@@ -24,30 +20,27 @@ public class FourBallsChallengeWithOOPS extends PApplet {
     public void draw() {
 
     NewEllipse newEllipse1 = getEllipseDimensions(1);
-    ellipse(newEllipse1.getSpeed(), newEllipse1.getHeight(), newEllipse1.getSize(), newEllipse1.getSize());
+    ellipse(newEllipse1.getXAxis(), newEllipse1.getYAxis(), newEllipse1.getSize(), newEllipse1.getSize());
 
     NewEllipse newEllipse2 = getEllipseDimensions(2);
-    ellipse(newEllipse2.getSpeed(), newEllipse2.getHeight(), newEllipse2.getSize(), newEllipse2.getSize());
+    ellipse(newEllipse2.getXAxis(), newEllipse2.getYAxis(), newEllipse2.getSize(), newEllipse2.getSize());
+
 
     NewEllipse newEllipse3 = getEllipseDimensions(3);
-    ellipse(newEllipse3.getSpeed(), newEllipse3.getHeight(), newEllipse3.getSize(), newEllipse3.getSize());
+    ellipse(newEllipse3.getXAxis(), newEllipse3.getYAxis(), newEllipse3.getSize(), newEllipse3.getSize());
+
 
     NewEllipse newEllipse4 = getEllipseDimensions(4);
-    ellipse(newEllipse4.getSpeed(), newEllipse4.getHeight(), newEllipse4.getSize(), newEllipse4.getSize());
+    ellipse(newEllipse4.getXAxis(), newEllipse4.getYAxis(), newEllipse4.getSize(), newEllipse4.getSize());
 
     speed++;
     }
 
  public NewEllipse getEllipseDimensions(int ballNo){
-     
-        NewEllipse newEllipse = new NewEllipse(ballNo);
-     
-        newEllipse.setHeight(HEIGHT * ballNo/5);
-     
-        newEllipse.setSpeed(speed * ballNo);
-     
-        newEllipse.setSize(size * ballNo);
-          
+        NewEllipse newEllipse = new NewEllipse();
+        newEllipse.setYAxis(HEIGHT * ballNo/5);
+        newEllipse.setXAxis(speed * ballNo);
+        newEllipse.setSize(size* ballNo);
         return newEllipse;
     }
 }
