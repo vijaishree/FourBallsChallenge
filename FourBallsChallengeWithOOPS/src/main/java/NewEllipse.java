@@ -9,7 +9,7 @@ public class NewEllipse {
     }
 
     public void setHeight(int height) {
-        this.height = height*ballNo;
+        this.height = height;
     }
 
     public int getHeight() {
@@ -18,11 +18,11 @@ public class NewEllipse {
 
     public void setSpeed(int speed) {
 
-        this.speed = speed*ballNo;
+        this.speed = speed;
     }
 
     public void setSize(int size) {
-        this.size = size * ballNo;
+        this.size = size;
     }
 
     public int getSpeed() {
