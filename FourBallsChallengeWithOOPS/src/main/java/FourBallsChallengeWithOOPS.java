@@ -42,14 +42,12 @@ public class FourBallsChallengeWithOOPS extends PApplet {
      
         NewEllipse newEllipse = new NewEllipse(ballNo);
      
-        newEllipse.setHeight(HEIGHT/5);
+        newEllipse.setHeight(HEIGHT * ballNo/5);
      
-        newEllipse.setSpeed(speed);
+        newEllipse.setSpeed(speed * ballNo);
      
-        newEllipse.setSize(size);
-     
-        System.out.println(newEllipse.toString());
-     
+        newEllipse.setSize(size * ballNo);
+          
         return newEllipse;
     }
 }
