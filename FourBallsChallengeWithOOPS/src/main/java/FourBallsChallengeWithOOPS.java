@@ -4,7 +4,7 @@ public class FourBallsChallengeWithOOPS extends PApplet {
 
     public static final int WIDTH = 640;
     public static final int HEIGHT = 480;
-    public int speed = 0;
+    public int xCoordinate = 0;
     public int size = 10;
     public static void main(String[] args){
         PApplet.main(FourBallsChallengeWithOOPS.class,args);
@@ -33,13 +33,13 @@ public class FourBallsChallengeWithOOPS extends PApplet {
     NewEllipse newEllipse4 = getEllipseDimensions(4);
     ellipse(newEllipse4.getXAxis(), newEllipse4.getYAxis(), newEllipse4.getSize(), newEllipse4.getSize());
 
-    speed++;
+    xCoordinate++;
     }
 
  public NewEllipse getEllipseDimensions(int ballNo){
         NewEllipse newEllipse = new NewEllipse();
         newEllipse.setYAxis(HEIGHT * ballNo/5);
-        newEllipse.setXAxis(speed * ballNo);
+        newEllipse.setXAxis(xCoordinate * ballNo);
         newEllipse.setSize(size* ballNo);
         return newEllipse;
     }
