@@ -20,26 +20,26 @@ public class FourBallsChallengeWithOOPS extends PApplet {
     public void draw() {
 
     NewEllipse newEllipse1 = getEllipseDimensions(1);
-    ellipse(newEllipse1.getXAxis(), newEllipse1.getYAxis(), newEllipse1.getSize(), newEllipse1.getSize());
+    ellipse(newEllipse1.getXCoordinate(), newEllipse1.getYCoordinate(), newEllipse1.getSize(), newEllipse1.getSize());
 
     NewEllipse newEllipse2 = getEllipseDimensions(2);
-    ellipse(newEllipse2.getXAxis(), newEllipse2.getYAxis(), newEllipse2.getSize(), newEllipse2.getSize());
+    ellipse(newEllipse2.getXCoordinate(), newEllipse2.getYCoordinate(), newEllipse2.getSize(), newEllipse2.getSize());
 
 
     NewEllipse newEllipse3 = getEllipseDimensions(3);
-    ellipse(newEllipse3.getXAxis(), newEllipse3.getYAxis(), newEllipse3.getSize(), newEllipse3.getSize());
+    ellipse(newEllipse3.getXCoordinate(), newEllipse3.getYCoordinate(), newEllipse3.getSize(), newEllipse3.getSize());
 
 
     NewEllipse newEllipse4 = getEllipseDimensions(4);
-    ellipse(newEllipse4.getXAxis(), newEllipse4.getYAxis(), newEllipse4.getSize(), newEllipse4.getSize());
+    ellipse(newEllipse4.getXCoordinate(), newEllipse4.getYCoordinate(), newEllipse4.getSize(), newEllipse4.getSize());
 
     xCoordinate++;
     }
 
  public NewEllipse getEllipseDimensions(int ballNo){
         NewEllipse newEllipse = new NewEllipse();
-        newEllipse.setYAxis(HEIGHT * ballNo/5);
-        newEllipse.setXAxis(xCoordinate * ballNo);
+        newEllipse.setYCoordinate(HEIGHT * ballNo/5);
+        newEllipse.setXCoordinate(xCoordinate * ballNo);
         newEllipse.setSize(size* ballNo);
         return newEllipse;
     }

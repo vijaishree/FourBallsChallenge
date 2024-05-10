@@ -3,15 +3,15 @@ public class NewEllipse {
     private int size;
     private int xCoordinate;
 
-    public void setYAxis(int yCoordinate) {
+    public void setYCoordinate(int yCoordinate) {
         this.yCoordinate = yCoordinate;
     }
 
-    public int getYAxis() {
+    public int getYCoordinate() {
         return yCoordinate ;
     }
 
-    public void setXAxis(int xCoordinate) {
+    public void setXCoordinate(int xCoordinate) {
 
         this.xCoordinate = xCoordinate;
     }
@@ -20,7 +20,7 @@ public class NewEllipse {
         this.size = size;
     }
 
-    public int getXAxis() {
+    public int getXCoordinate() {
         return xCoordinate;
     }
 
