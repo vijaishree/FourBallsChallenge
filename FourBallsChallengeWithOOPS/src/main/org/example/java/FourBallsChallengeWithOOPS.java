@@ -19,28 +19,28 @@ public class FourBallsChallengeWithOOPS extends PApplet {
     @Override
     public void draw() {
 
-    NewEllipse newEllipse1 = getEllipseDimensions(1);
-    ellipse(newEllipse1.getXCoordinate(), newEllipse1.getYCoordinate(), newEllipse1.getSize(), newEllipse1.getSize());
+    Ellipse ellipseOne = getEllipseDimensions(1);
+    ellipse(ellipseOne.getXCoordinate(), ellipseOne.getYCoordinate(), ellipseOne.getSize(), ellipseOne.getSize());
 
-    NewEllipse newEllipse2 = getEllipseDimensions(2);
-    ellipse(newEllipse2.getXCoordinate(), newEllipse2.getYCoordinate(), newEllipse2.getSize(), newEllipse2.getSize());
-
-
-    NewEllipse newEllipse3 = getEllipseDimensions(3);
-    ellipse(newEllipse3.getXCoordinate(), newEllipse3.getYCoordinate(), newEllipse3.getSize(), newEllipse3.getSize());
+    Ellipse ellipseTwo = getEllipseDimensions(2);
+    ellipse(ellipseTwo.getXCoordinate(), ellipseTwo.getYCoordinate(), ellipseTwo.getSize(), ellipseTwo.getSize());
 
 
-    NewEllipse newEllipse4 = getEllipseDimensions(4);
-    ellipse(newEllipse4.getXCoordinate(), newEllipse4.getYCoordinate(), newEllipse4.getSize(), newEllipse4.getSize());
+    Ellipse ellipseThree = getEllipseDimensions(3);
+    ellipse(ellipseThree.getXCoordinate(), ellipseThree.getYCoordinate(), ellipseThree.getSize(), ellipseThree.getSize());
+
+
+    Ellipse ellipseFour = getEllipseDimensions(4);
+    ellipse(ellipseFour.getXCoordinate(), ellipseFour.getYCoordinate(), ellipseFour.getSize(), ellipseFour.getSize());
 
     xCoordinate++;
     }
 
- public NewEllipse getEllipseDimensions(int ballNo){
-        NewEllipse newEllipse = new NewEllipse();
-        newEllipse.setYCoordinate(HEIGHT * ballNo/5);
-        newEllipse.setXCoordinate(xCoordinate * ballNo);
-        newEllipse.setSize(size* ballNo);
-        return newEllipse;
+ public Ellipse getEllipseDimensions(int ballNo){
+        Ellipse ellipse = new Ellipse();
+        ellipse.setYCoordinate(HEIGHT * ballNo/5);
+        ellipse.setXCoordinate(xCoordinate * ballNo);
+        ellipse.setSize(size* ballNo);
+        return ellipse;
     }
 }

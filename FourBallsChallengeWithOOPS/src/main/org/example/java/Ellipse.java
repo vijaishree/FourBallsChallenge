@@ -1,4 +1,4 @@
-public class NewEllipse {
+public class Ellipse {
     private int yCoordinate;
     private int size;
     private int xCoordinate;
